@@ -1,0 +1,68 @@
+D:/141L/ERICK/ALU.sv {1 {vlog -work work -sv -stats=none D:/141L/ERICK/ALU.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling package ALU_sv_unit
+-- Importing package definitions
+-- Compiling module ALU
+
+Top level modules:
+	ALU
+
+} {} {}} D:/141L/ERICK/TopLevel.sv {1 {vlog -work work -sv -stats=none D:/141L/ERICK/TopLevel.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module TopLevel
+
+Top level modules:
+	TopLevel
+
+} {} {}} D:/141L/ERICK/PC.sv {1 {vlog -work work -sv -stats=none D:/141L/ERICK/PC.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module PC
+
+Top level modules:
+	PC
+
+} {} {}} D:/141L/ERICK/InstROM.sv {1 {vlog -work work -sv -stats=none D:/141L/ERICK/InstROM.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module InstROM
+
+Top level modules:
+	InstROM
+
+} {} {}} D:/141L/ERICK/data_mem.sv {1 {vlog -work work -sv -stats=none D:/141L/ERICK/data_mem.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module data_mem
+
+Top level modules:
+	data_mem
+
+} {} {}} D:/141L/ERICK/definitions.sv {1 {vlog -work work -sv -stats=none D:/141L/ERICK/definitions.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling package definitions
+
+Top level modules:
+	--none--
+
+} {} {}} D:/141L/ERICK/TopLevel_tb.sv {1 {vlog -work work -sv -stats=none D:/141L/ERICK/TopLevel_tb.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module TopLevel_tb
+
+Top level modules:
+	TopLevel_tb
+
+} {} {}} D:/141L/ERICK/reg_file.sv {1 {vlog -work work -sv -stats=none D:/141L/ERICK/reg_file.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module reg_file
+
+Top level modules:
+	reg_file
+
+} {} {}} D:/141L/ERICK/Control.sv {1 {vlog -work work -sv -stats=none D:/141L/ERICK/Control.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling package Control_sv_unit
+-- Importing package definitions
+-- Compiling module Control
+
+Top level modules:
+	Control
+
+} {} {}}

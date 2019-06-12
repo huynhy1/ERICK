@@ -30,10 +30,10 @@ casez(Instr_i)
 	end
 	kLB: begin
 		MemRead = 1'b1;
+		MoveAcc = 1'b1;
 	end
 	kSB: begin
 		MemWrite = 1'b1;
-
 	end
 	kFLIP: begin
 		

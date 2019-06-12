@@ -18,10 +18,10 @@ module PC #(parameter W=16)( // W = PC Width
   always_ff @(posedge CLK)	  // or just always; always_ff is a linting construct
 	if(Init)
 	  PC <= 0;				  // for first program; want different value for 2nd or 3rd
-	else if(PC == 140)
+	else if(PC == 143)
 	  Halt <= 1;
 	else if(Branch_abs && B_TAKEN)	      // conditional absolute jump
-	  PC <= 5;
+	  PC <= 4;
 	else
 	  PC <= PC+1;		      // default increment (no need for ARM/MIPS +4 -- why?)
 

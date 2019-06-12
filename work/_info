@@ -27,7 +27,7 @@ Z5 8D:/141L/ERICK/ALU.sv
 Z6 FD:/141L/ERICK/ALU.sv
 L0 9
 Z7 OV;L;10.5b;63
-Z8 !s108 1559794042.000000
+Z8 !s108 1560312770.000000
 Z9 !s107 D:/141L/ERICK/ALU.sv|
 Z10 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/141L/ERICK/ALU.sv|
 !i113 1
@@ -68,17 +68,17 @@ r1
 !s85 0
 31
 !i10b 1
-!s100 WV:TX[hV_]N<c5[W>6Q_>3
-IOaYY@RSk;R9THZDK0=:3T0
+!s100 d:l^0ljgbBolNnE_S[8<^1
+IdWV6d2Ol1hEmgf6?:c=A]3
 !s105 Control_sv_unit
 S1
 R3
-Z13 w1559787104
+Z13 w1560307658
 Z14 8D:/141L/ERICK/Control.sv
 Z15 FD:/141L/ERICK/Control.sv
 L0 2
 R7
-Z16 !s108 1559794043.000000
+Z16 !s108 1560312771.000000
 Z17 !s107 D:/141L/ERICK/Control.sv|
 Z18 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/141L/ERICK/Control.sv|
 !i113 1
@@ -137,15 +137,15 @@ R12
 n@ctrl_sv_unit
 vdata_mem
 R0
-Z19 !s110 1559794042
+Z19 !s110 1560312770
 !i10b 1
-!s100 OH@bOXSDIDHfeHBlgflbb2
-I@1@N74oYIz0Z]ePgio:zU1
+!s100 o1li8SPlWkI7mKle9H=RO3
+I_?ARL;>^dfQMZg;LGH3][0
 R2
 !s105 data_mem_sv_unit
 S1
 R3
-w1559783461
+w1560308213
 8D:/141L/ERICK/data_mem.sv
 FD:/141L/ERICK/data_mem.sv
 L0 6
@@ -184,7 +184,7 @@ R11
 R12
 vInstROM
 R0
-Z20 !s110 1559794043
+R19
 !i10b 1
 !s100 LRJN03zi=EcA=RAA@`ff[1
 I:RTX]@TLdgl8UF99;_@861
@@ -200,7 +200,7 @@ R7
 r1
 !s85 0
 31
-R16
+R8
 !s107 D:/141L/ERICK/InstROM.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/141L/ERICK/InstROM.sv|
 !i113 1
@@ -209,15 +209,15 @@ R12
 n@inst@r@o@m
 vPC
 R0
-R20
+R19
 !i10b 1
-!s100 IS`LSFWm]a:[NCBfC7nOT0
-I92[9]he`k<AMPV?dU<g><3
+!s100 hg:<<GloPJF1]OBDNz6aY1
+IX5c2^?::;J@1hz3m@Gd^f0
 R2
 !s105 PC_sv_unit
 S1
 R3
-w1559788863
+w1560312352
 8D:/141L/ERICK/PC.sv
 FD:/141L/ERICK/PC.sv
 L0 8
@@ -225,24 +225,48 @@ R7
 r1
 !s85 0
 31
-R16
+R8
 !s107 D:/141L/ERICK/PC.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/141L/ERICK/PC.sv|
 !i113 1
 R11
 R12
 n@p@c
+vprog123_tb
+R0
+Z20 !s110 1560312771
+!i10b 1
+!s100 Q]FSUC52iiJDRgY6oOaKa1
+IzPfUjW_=bn[ldXT3@YX@m0
+R2
+!s105 prog123_tb_sv_unit
+S1
+R3
+w1560312738
+8D:/141L/ERICK/prog123_tb.sv
+FD:/141L/ERICK/prog123_tb.sv
+L0 3
+R7
+r1
+!s85 0
+31
+R16
+!s107 D:/141L/ERICK/prog123_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/141L/ERICK/prog123_tb.sv|
+!i113 1
+R11
+R12
 vreg_file
 R0
 R20
 !i10b 1
-!s100 1T_O=Rkfd@CeQjO1Mm5?Z0
-IS;Iz>j_UOcincX^cjkN]o2
+!s100 M2YeC>jO6VmVo4=WS?BRH2
+IW`C[EIM:j^oh24`z]RYVo2
 R2
 !s105 reg_file_sv_unit
 S1
 R3
-w1559794033
+w1560307599
 8D:/141L/ERICK/reg_file.sv
 FD:/141L/ERICK/reg_file.sv
 L0 7
@@ -260,13 +284,13 @@ vTopLevel
 R0
 R20
 !i10b 1
-!s100 WH`8_oX1R>oUW6E2AHiOk0
-Ic^?6GZ6^@XP3mfKlKzO]W0
+!s100 0mNn<IQ215gJfDglAIbeG2
+IDITBdn6cYMaCf^PGl?9km3
 R2
 !s105 TopLevel_sv_unit
 S1
 R3
-w1559788925
+w1560307307
 8D:/141L/ERICK/TopLevel.sv
 FD:/141L/ERICK/TopLevel.sv
 L0 6
@@ -283,15 +307,15 @@ R12
 n@top@level
 vTopLevel_tb
 R0
-R19
+!s110 1560312362
 !i10b 1
-!s100 zdNYz`ij:hnBL1N16RPEa2
-IZ6CmoU0lmJQh`AMDee]6n1
+!s100 >Le2DMd0Ba^ce2]nKgmO83
+I8FbcnT8OD[VXUZhX145eB0
 R2
 !s105 TopLevel_tb_sv_unit
 S1
 R3
-w1548636326
+w1560310274
 8D:/141L/ERICK/TopLevel_tb.sv
 FD:/141L/ERICK/TopLevel_tb.sv
 L0 8
@@ -299,7 +323,7 @@ R7
 r1
 !s85 0
 31
-R8
+!s108 1560312362.000000
 !s107 D:/141L/ERICK/TopLevel_tb.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/141L/ERICK/TopLevel_tb.sv|
 !i113 1

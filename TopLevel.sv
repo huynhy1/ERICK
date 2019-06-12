@@ -22,7 +22,7 @@ wire [2:0] ALUOp;
 wire [ 7:0] InA, InB, 	   // ALU operand inputs
 			ALU_Out;       // ALU result
 wire B_TAKEN;
-wire [ 7:0] regWriteValue, // data in to reg file
+wire [ 7:0] RegWriteValue, // data in to reg file
 			memWriteValue, // data in to data_memory
 			Mem_Out;	   // data out from data_memory
 wire 		
@@ -62,18 +62,19 @@ assign RegWriteValue = MemRead ? Mem_Out :    // LD
 // reg file
 reg_file #(.W(8),.D(4)) reg_file1 (
 	.CLK   ,
+	.Init		(start),
 	.write_en  (MoveAcc)    , 
 	.addr 		(Instruction[4:1]),
-	.data_in   (ALU_Out) ,
+	.data_in   (RegWriteValue) ,
 	.data_out  (ReadReg),
-	.acc_out  	(Acc_Out)
+	.acc_out  	(InB)
 		);
 // one pointer, two adjacent read accesses: (optional approach)
 //	.raddrA ({Instruction[5:3],1'b0});
 //	.raddrB ({Instruction[5:3],1'b1});
 
 	assign InA = ALUSrc ? Instruction[4:0] : ReadReg;						          // connect RF out to ALU in
-	assign InB = Acc_Out;
+	// assign InB = Acc_Out;
 ALU ALU1  (
 .INPUTA  (InA),
 .INPUTB  (InB), 
@@ -83,14 +84,13 @@ ALU ALU1  (
 .B_TAKEN
 );
 
-assign data_address = ReadReg;
 data_mem data_mem1(
 	.CLK 		  		     ,
 	.reset		  (start),
-	.DataAddress  (data_address)    , 
+	.DataAddress  (ReadReg), // REGREAD 
 	.ReadMem      (MemRead),          //(MEM_READ) ,   always enabled 
 	.WriteMem     (MemWrite), 
-	.DataIn       (ALU_Out), 
+	.DataIn       (InB), // ACC
 	.DataOut      (Mem_Out)
 );
 	
